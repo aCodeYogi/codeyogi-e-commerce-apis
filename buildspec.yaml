@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14.x
+    commands:
+      - n 16
+  build:
+    commands:
+      - npm install
+      - npm run build
+      - cp -R .ebextensions build/
+      - cd build/ && npm install
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build
