@@ -29,4 +29,4 @@ Route.get('/', async () => {
 Route.post('signup', 'AuthController.signup')
 Route.post('login', 'AuthController.login')
 Route.get('me', 'AuthController.me')
-Route.get("/products", "ProductsController.show")
+Route.get("/products", "ProductsController.index")
