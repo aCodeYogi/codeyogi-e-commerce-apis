@@ -14,7 +14,7 @@
 | and then import them inside `start/routes.ts` as follows
 |
 | import './routes/cart'
-| import './routes/customer'
+| import './routes/customer'j
 |
 */
 
@@ -29,3 +29,4 @@ Route.get('/', async () => {
 Route.post('signup', 'AuthController.signup')
 Route.post('login', 'AuthController.login')
 Route.get('me', 'AuthController.me')
+Route.get("/products", "ProductsController.show")
