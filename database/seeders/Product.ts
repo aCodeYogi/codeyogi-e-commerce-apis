@@ -26,8 +26,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'iPhone X',
-          description:
-            'SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...',
+          description: 'SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic',
           price: 899,
           discountPercentage: 17.94,
           rating: 4.44,
@@ -91,8 +90,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'MacBook Pro',
-          description:
-            'MacBook Pro 2021 with mini-LED display may launch between September, November',
+          description: 'MacBook Pro 2021 with mini-LED display may launch between September, November',
           price: 1749,
           discountPercentage: 11.02,
           rating: 4.57,
@@ -109,8 +107,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Samsung Galaxy Book',
-          description:
-            'Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched',
+          description: 'Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched',
           price: 1499,
           discountPercentage: 4.15,
           rating: 4.25,
@@ -127,8 +124,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Microsoft Surface Laptop 4',
-          description:
-            'Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.',
+          description: 'Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.',
           price: 1499,
           discountPercentage: 10.23,
           rating: 4.43,
@@ -164,8 +160,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'HP Pavilion 15-DK1056WM',
-          description:
-            'HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10',
+          description: 'HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10',
           price: 1099,
           discountPercentage: 6.18,
           rating: 4.43,
@@ -182,8 +177,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'perfume Oil',
-          description:
-            'Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil',
+          description: 'Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil',
           price: 13,
           discountPercentage: 8.4,
           rating: 4.26,
@@ -218,8 +212,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Fog Scent Xpressio Perfume',
-          description:
-            'Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men',
+          description: 'Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men',
           price: 13,
           discountPercentage: 8.14,
           rating: 4.59,
@@ -237,8 +230,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Non-Alcoholic Concentrated Perfume Oil',
-          description:
-            'Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil',
+          description: 'Original Al Munakh® by Mahal Al Musk | Our Impression of Climate | 6ml Non-Alcoholic Concentrated Perfume Oil',
           price: 120,
           discountPercentage: 15.6,
           rating: 4.21,
@@ -273,8 +265,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Hyaluronic Acid Serum',
-          description:
-            "L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
+          description: "L'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
           price: 19,
           discountPercentage: 13.31,
           rating: 4.83,
@@ -292,8 +283,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Tree Oil 30ml',
-          description:
-            'Tea tree oil contains a number of compounds, including terpinen-4-ol, that have been shown to kill certain bacteria,',
+          description: 'Tea tree oil contains a number of compounds, including terpinen-4-ol, that have been shown to kill certain bacteria,',
           price: 12,
           discountPercentage: 4.09,
           rating: 4.52,
@@ -310,8 +300,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Oil Free Moisturizer 100ml',
-          description:
-            'Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid & sunscreen.',
+          description: 'Dermive Oil Free Moisturizer with SPF 20 is specifically formulated with ceramides, hyaluronic acid & sunscreen.',
           price: 40,
           discountPercentage: 13.1,
           rating: 4.56,
@@ -329,8 +318,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Skin Beauty Serum.',
-          description:
-            'Product name: rorec collagen hyaluronic acid white face serum riceNet weight: 15 m',
+          description: 'Product name: rorec collagen hyaluronic acid white face serum riceNet weight: 15 m',
           price: 46,
           discountPercentage: 10.68,
           rating: 4.42,
@@ -398,8 +386,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Orange Essence Food Flavou',
-          description:
-            'Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item',
+          description: 'Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item',
           price: 14,
           discountPercentage: 8.04,
           rating: 4.85,
@@ -454,8 +441,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Plant Hanger For Home',
-          description:
-            'Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf',
+          description: 'Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf',
           price: 41,
           discountPercentage: 17.86,
           rating: 4.08,
@@ -474,8 +460,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Flying Wooden Bird',
-          description:
-            'Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm',
+          description: 'Package Include 6 Birds with Adhesive Tape Shape: 3D Shaped Wooden Birds Material: Wooden MDF, Laminated 3.5mm',
           price: 51,
           discountPercentage: 15.58,
           rating: 4.41,
@@ -493,8 +478,7 @@ export default class extends BaseSeeder {
         },
         {
           title: '3D Embellishment Art Lamp',
-          description:
-            '3D led lamp sticker Wall sticker 3d wall art light on/off button  cell operated (included)',
+          description: '3D led lamp sticker Wall sticker 3d wall art light on/off button  cell operated (included)',
           price: 20,
           discountPercentage: 16.49,
           rating: 4.82,
@@ -512,8 +496,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Handcraft Chinese style',
-          description:
-            'Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate',
+          description: 'Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate',
           price: 60,
           discountPercentage: 15.34,
           rating: 4.44,
@@ -531,8 +514,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Key Holder',
-          description:
-            'Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality',
+          description: 'Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality',
           price: 30,
           discountPercentage: 2.92,
           rating: 4.92,
@@ -549,8 +531,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Mornadi Velvet Bed',
-          description:
-            'Mornadi Velvet Bed Base with Headboard Slats Support Classic Style Bedroom Furniture Bed Set',
+          description: 'Mornadi Velvet Bed Base with Headboard Slats Support Classic Style Bedroom Furniture Bed Set',
           price: 40,
           discountPercentage: 17,
           rating: 4.16,
@@ -585,8 +566,7 @@ export default class extends BaseSeeder {
         },
         {
           title: '3 Tier Corner Shelves',
-          description:
-            '3 Tier Corner Shelves | 3 PCs Wall Mount Kitchen Shelf | Floating Bedroom Shelf',
+          description: '3 Tier Corner Shelves | 3 PCs Wall Mount Kitchen Shelf | Floating Bedroom Shelf',
           price: 700,
           discountPercentage: 17,
           rating: 4.31,
@@ -622,8 +602,7 @@ export default class extends BaseSeeder {
         },
         {
           title: '3 DOOR PORTABLE',
-          description:
-            'Material: Stainless Steel and Fabric  Item Size: 110 cm x 45 cm x 175 cm Package Contents: 1 Storage Wardrobe',
+          description: 'Material: Stainless Steel and Fabric  Item Size: 110 cm x 45 cm x 175 cm Package Contents: 1 Storage Wardrobe',
           price: 41,
           discountPercentage: 7.98,
           rating: 4.06,
@@ -660,8 +639,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'ank Tops for Womens/Girls',
-          description:
-            'PACK OF 3 CAMISOLES ,VERY COMFORTABLE SOFT COTTON STUFF, COMFORTABLE IN ALL FOUR SEASONS',
+          description: 'PACK OF 3 CAMISOLES ,VERY COMFORTABLE SOFT COTTON STUFF, COMFORTABLE IN ALL FOUR SEASONS',
           price: 50,
           discountPercentage: 12.05,
           rating: 4.52,
@@ -696,8 +674,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Women Sweaters Wool',
-          description:
-            "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women' S Crop Top Sweater",
+          description: "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women' S Crop Top Sweater",
           price: 600,
           discountPercentage: 17.2,
           rating: 4.55,
@@ -715,8 +692,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'women winter clothes',
-          description:
-            'women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set',
+          description: 'women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set',
           price: 57,
           discountPercentage: 13.39,
           rating: 4.91,
@@ -724,10 +700,7 @@ export default class extends BaseSeeder {
           brand: 'Top Sweater',
           category: 'tops',
           thumbnail: 'https://dummyjson.com/image/i/products/40/thumbnail.jpg',
-          images: [
-            'https://dummyjson.com/image/i/products/40/1.jpg',
-            'https://dummyjson.com/image/i/products/40/2.jpg',
-          ],
+          images: ['https://dummyjson.com/image/i/products/40/1.jpg', 'https://dummyjson.com/image/i/products/40/2.jpg'],
         },
         {
           title: 'NIGHT SUIT',
@@ -767,8 +740,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'frock gold printed',
-          description:
-            'Ghazi fabric long frock gold printed ready to wear stitched collection (G992)',
+          description: 'Ghazi fabric long frock gold printed ready to wear stitched collection (G992)',
           price: 600,
           discountPercentage: 15.55,
           rating: 4.31,
@@ -786,8 +758,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Ladies Multicolored Dress',
-          description:
-            'This classy shirt for women gives you a gorgeous look on everyday wear and specially for semi-casual wears.',
+          description: 'This classy shirt for women gives you a gorgeous look on everyday wear and specially for semi-casual wears.',
           price: 79,
           discountPercentage: 16.88,
           rating: 4.03,
@@ -805,8 +776,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Malai Maxi Dress',
-          description:
-            'Ready to wear, Unique design according to modern standard fashion, Best fitting ,Imported stuff',
+          description: 'Ready to wear, Unique design according to modern standard fashion, Best fitting ,Imported stuff',
           price: 50,
           discountPercentage: 5.07,
           rating: 4.67,
@@ -859,8 +829,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Women Strip Heel',
-          description:
-            'Features: Flip-flops, Mid Heel, Comfortable, Striped Heel, Antiskid, Striped',
+          description: 'Features: Flip-flops, Mid Heel, Comfortable, Striped Heel, Antiskid, Striped',
           price: 40,
           discountPercentage: 10.83,
           rating: 4.02,
@@ -878,8 +847,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Chappals & Shoe Ladies Metallic',
-          description:
-            'Womens Chappals & Shoe Ladies Metallic Tong Thong Sandal Flat Summer 2020 Maasai Sandals',
+          description: 'Womens Chappals & Shoe Ladies Metallic Tong Thong Sandal Flat Summer 2020 Maasai Sandals',
           price: 23,
           discountPercentage: 2.62,
           rating: 4.72,
@@ -896,8 +864,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Women Shoes',
-          description:
-            '2020 New Arrivals Genuine Leather Fashion Trend Platform Summer Women Shoes',
+          description: '2020 New Arrivals Genuine Leather Fashion Trend Platform Summer Women Shoes',
           price: 36,
           discountPercentage: 16.87,
           rating: 4.33,
@@ -931,8 +898,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'FREE FIRE T Shirt',
-          description:
-            "quality and professional print - It doesn't just look high quality, it is high quality.",
+          description: "quality and professional print - It doesn't just look high quality, it is high quality.",
           price: 10,
           discountPercentage: 14.72,
           rating: 4.52,
@@ -1024,8 +990,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Loafers for men',
-          description:
-            'Men Shoes - Loafers for men - Rubber Shoes - Nylon Shoes - Shoes for men - Moccassion - Pure Nylon (Rubber) Expot Quality.',
+          description: 'Men Shoes - Loafers for men - Rubber Shoes - Nylon Shoes - Shoes for men - Moccassion - Pure Nylon (Rubber) Expot Quality.',
           price: 47,
           discountPercentage: 10.91,
           rating: 4.91,
@@ -1043,8 +1008,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'formal offices shoes',
-          description:
-            'Pattern Type: Solid, Material: PU, Toe Shape: Pointed Toe ,Outsole Material: Rubber',
+          description: 'Pattern Type: Solid, Material: PU, Toe Shape: Pointed Toe ,Outsole Material: Rubber',
           price: 57,
           discountPercentage: 12,
           rating: 4.41,
@@ -1113,8 +1077,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Waterproof Leather Brand Watch',
-          description:
-            'Watch Crown With Environmental IPS Bronze Electroplating; Display system of 12 hours',
+          description: 'Watch Crown With Environmental IPS Bronze Electroplating; Display system of 12 hours',
           price: 46,
           discountPercentage: 3.15,
           rating: 4.05,
@@ -1122,10 +1085,7 @@ export default class extends BaseSeeder {
           brand: 'SKMEI 9117',
           category: 'mens-watches',
           thumbnail: 'https://dummyjson.com/image/i/products/62/thumbnail.jpg',
-          images: [
-            'https://dummyjson.com/image/i/products/62/1.jpg',
-            'https://dummyjson.com/image/i/products/62/2.jpg',
-          ],
+          images: ['https://dummyjson.com/image/i/products/62/1.jpg', 'https://dummyjson.com/image/i/products/62/2.jpg'],
         },
         {
           title: 'Royal Blue Premium Watch',
@@ -1163,8 +1123,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Stainless Steel Wrist Watch',
-          description:
-            "Stylish Watch For Man (Luxury) Classy Men's Stainless Steel Wrist Watch - Box Packed",
+          description: "Stylish Watch For Man (Luxury) Classy Men's Stainless Steel Wrist Watch - Box Packed",
           price: 47,
           discountPercentage: 17.79,
           rating: 4.79,
@@ -1219,8 +1178,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Stylish Luxury Digital Watch',
-          description:
-            'Stylish Luxury Digital Watch For Girls / Women - Led Smart Ladies Watches For Girls',
+          description: 'Stylish Luxury Digital Watch For Girls / Women - Led Smart Ladies Watches For Girls',
           price: 57,
           discountPercentage: 9.03,
           rating: 4.55,
@@ -1228,15 +1186,11 @@ export default class extends BaseSeeder {
           brand: 'Luxury Digital',
           category: 'womens-watches',
           thumbnail: 'https://dummyjson.com/image/i/products/68/thumbnail.webp',
-          images: [
-            'https://dummyjson.com/image/i/products/68/1.jpg',
-            'https://dummyjson.com/image/i/products/68/2.jpg',
-          ],
+          images: ['https://dummyjson.com/image/i/products/68/1.jpg', 'https://dummyjson.com/image/i/products/68/2.jpg'],
         },
         {
           title: 'Golden Watch Pearls Bracelet Watch',
-          description:
-            'Product details of Golden Watch Pearls Bracelet Watch For Girls - Golden Chain Ladies Bracelate Watch for Women',
+          description: 'Product details of Golden Watch Pearls Bracelet Watch For Girls - Golden Chain Ladies Bracelate Watch for Women',
           price: 47,
           discountPercentage: 17.55,
           rating: 4.77,
@@ -1254,8 +1208,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Stainless Steel Women',
-          description:
-            'Fashion Skmei 1830 Shell Dial Stainless Steel Women Wrist Watch Lady Bracelet Watch Quartz Watches Ladies',
+          description: 'Fashion Skmei 1830 Shell Dial Stainless Steel Women Wrist Watch Lady Bracelet Watch Quartz Watches Ladies',
           price: 35,
           discountPercentage: 8.98,
           rating: 4.08,
@@ -1289,8 +1242,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Handbag For Girls',
-          description:
-            'This fashion is designed to add a charming effect to your casual outfit. This Bag is made of synthetic leather.',
+          description: 'This fashion is designed to add a charming effect to your casual outfit. This Bag is made of synthetic leather.',
           price: 23,
           discountPercentage: 17.5,
           rating: 4.91,
@@ -1308,8 +1260,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Fancy hand clutch',
-          description:
-            'This fashion is designed to add a charming effect to your casual outfit. This Bag is made of synthetic leather.',
+          description: 'This fashion is designed to add a charming effect to your casual outfit. This Bag is made of synthetic leather.',
           price: 44,
           discountPercentage: 10.39,
           rating: 4.18,
@@ -1345,8 +1296,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Seven Pocket Women Bag',
-          description:
-            'Seven Pocket Women Bag Handbags Lady Shoulder Crossbody Bag Female Purse Seven Pocket Bag',
+          description: 'Seven Pocket Women Bag Handbags Lady Shoulder Crossbody Bag Female Purse Seven Pocket Bag',
           price: 68,
           discountPercentage: 14.87,
           rating: 4.93,
@@ -1363,8 +1313,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Silver Ring Set Women',
-          description:
-            'Jewelry Type:RingsCertificate Type:NonePlating:Silver PlatedShapeattern:noneStyle:CLASSICReligious',
+          description: 'Jewelry Type:RingsCertificate Type:NonePlating:Silver PlatedShapeattern:noneStyle:CLASSICReligious',
           price: 70,
           discountPercentage: 13.57,
           rating: 4.61,
@@ -1397,8 +1346,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Rhinestone Korean Style Open Rings',
-          description:
-            'Fashion Jewellery 3Pcs Adjustable Pearl Rhinestone Korean Style Open Rings For Women',
+          description: 'Fashion Jewellery 3Pcs Adjustable Pearl Rhinestone Korean Style Open Rings For Women',
           price: 30,
           discountPercentage: 8.02,
           rating: 4.69,
@@ -1410,8 +1358,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Elegant Female Pearl Earrings',
-          description:
-            'Elegant Female Pearl Earrings Set Zircon Pearl Earings Women Party Accessories 9 Pairs/Set',
+          description: 'Elegant Female Pearl Earrings Set Zircon Pearl Earings Women Party Accessories 9 Pairs/Set',
           price: 30,
           discountPercentage: 12.8,
           rating: 4.74,
@@ -1423,8 +1370,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Chain Pin Tassel Earrings',
-          description:
-            'Pair Of Ear Cuff Butterfly Long Chain Pin Tassel Earrings - Silver ( Long Life Quality Product)',
+          description: 'Pair Of Ear Cuff Butterfly Long Chain Pin Tassel Earrings - Silver ( Long Life Quality Product)',
           price: 45,
           discountPercentage: 17.75,
           rating: 4.59,
@@ -1461,8 +1407,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Kabir Singh Square Sunglass',
-          description:
-            'Orignal Metal Kabir Singh design 2020 Sunglasses Men Brand Designer Sun Glasses Kabir Singh Square Sunglass',
+          description: 'Orignal Metal Kabir Singh design 2020 Sunglasses Men Brand Designer Sun Glasses Kabir Singh Square Sunglass',
           price: 50,
           discountPercentage: 15.6,
           rating: 4.62,
@@ -1590,8 +1535,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Qualcomm original Car Charger',
-          description:
-            'best Quality CHarger , Highly Recommended to all best Quality CHarger , Highly Recommended to all',
+          description: 'best Quality CHarger , Highly Recommended to all best Quality CHarger , Highly Recommended to all',
           price: 40,
           discountPercentage: 17.53,
           rating: 4.2,
@@ -1647,8 +1591,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'HOT SALE IN EUROPE electric racing motorcycle',
-          description:
-            'HOT SALE IN EUROPE electric racing motorcycle electric motorcycle for sale adult electric motorcycles',
+          description: 'HOT SALE IN EUROPE electric racing motorcycle electric motorcycle for sale adult electric motorcycles',
           price: 920,
           discountPercentage: 14.4,
           rating: 4.19,
@@ -1665,8 +1608,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Automatic Motor Gas Motorcycles',
-          description:
-            '150cc 4-Stroke Motorcycle Automatic Motor Gas Motorcycles Scooter motorcycles 150cc scooter',
+          description: '150cc 4-Stroke Motorcycle Automatic Motor Gas Motorcycles Scooter motorcycles 150cc scooter',
           price: 1050,
           discountPercentage: 3.34,
           rating: 4.84,
@@ -1684,8 +1626,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'new arrivals Fashion motocross goggles',
-          description:
-            'new arrivals Fashion motocross goggles motorcycle motocross racing motorcycle',
+          description: 'new arrivals Fashion motocross goggles motorcycle motocross racing motorcycle',
           price: 900,
           discountPercentage: 3.85,
           rating: 4.06,
@@ -1702,8 +1643,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Wholesale cargo lashing Belt',
-          description:
-            'Wholesale cargo lashing Belt Tie Down end Ratchet strap customized strap 25mm motorcycle 1500kgs with rubber handle',
+          description: 'Wholesale cargo lashing Belt Tie Down end Ratchet strap customized strap 25mm motorcycle 1500kgs with rubber handle',
           price: 930,
           discountPercentage: 17.67,
           rating: 4.21,
@@ -1721,8 +1661,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'lighting ceiling kitchen',
-          description:
-            'Wholesale slim hanging decorative kid room lighting ceiling kitchen chandeliers pendant light modern',
+          description: 'Wholesale slim hanging decorative kid room lighting ceiling kitchen chandeliers pendant light modern',
           price: 30,
           discountPercentage: 14.89,
           rating: 4.83,
@@ -1740,8 +1679,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'Metal Ceramic Flower',
-          description:
-            'Metal Ceramic Flower Chandelier Home Lighting American Vintage Hanging Lighting Pendant Lamp',
+          description: 'Metal Ceramic Flower Chandelier Home Lighting American Vintage Hanging Lighting Pendant Lamp',
           price: 35,
           discountPercentage: 10.94,
           rating: 4.93,
@@ -1759,8 +1697,7 @@ export default class extends BaseSeeder {
         },
         {
           title: '3 lights lndenpant kitchen islang',
-          description:
-            '3 lights lndenpant kitchen islang dining room pendant rice paper chandelier contemporary led pendant light modern chandelier',
+          description: '3 lights lndenpant kitchen islang dining room pendant rice paper chandelier contemporary led pendant light modern chandelier',
           price: 34,
           discountPercentage: 5.92,
           rating: 4.99,
@@ -1778,8 +1715,7 @@ export default class extends BaseSeeder {
         },
         {
           title: 'American Vintage Wood Pendant Light',
-          description:
-            'American Vintage Wood Pendant Light Farmhouse Antique Hanging Lamp Lampara Colgante',
+          description: 'American Vintage Wood Pendant Light Farmhouse Antique Hanging Lamp Lampara Colgante',
           price: 46,
           discountPercentage: 8.84,
           rating: 4.32,
