@@ -3,8 +3,8 @@ import BaseSchema from '@ioc:Adonis/Lucid/Schema'
 export default class AuthsSchema extends BaseSchema {
   protected tableName = 'users'
 
-  public async up() {
-    this.schema.createTable(this.tableName, (table) => {
+  public up() {
+    void this.schema.createTable(this.tableName, (table) => {
       table.increments('id').primary()
       table.string('full_name').notNullable()
       table.string('email', 255).notNullable().unique()
@@ -15,7 +15,7 @@ export default class AuthsSchema extends BaseSchema {
     })
   }
 
-  public async down() {
-    this.schema.dropTable(this.tableName)
+  public down() {
+    void this.schema.dropTable(this.tableName)
   }
 }
