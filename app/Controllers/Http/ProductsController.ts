@@ -3,7 +3,7 @@ import { schema, validator } from '@ioc:Adonis/Core/Validator'
 import Product from 'App/Models/Product'
 
 export default class ProductsController {
-  public async index({ request, response }: HttpContextContract) {
+  public async index({ request }: HttpContextContract) {
     const { search, page, sortBy, sortType } = request.qs() as {
       search?: string
       page?: string
@@ -12,20 +12,22 @@ export default class ProductsController {
     }
     const cols = Object.keys(Product.$keys.serializedToColumns.all())
 
-    if (sortBy && !cols.includes(sortBy)) return response.badRequest(`${sortBy} column does not exist in product`)
-
-    let query = Product.query().where((query) => {
-      if (search) return query.whereRaw('LOWER(title) like ?', [`%${search.toLowerCase()}%`])
+    const senetisedQs = await validator.validate({
+      schema: schema.create({
+        sortBy: schema.enum.optional(cols),
+        sortType: schema.enum.optional(['asc', 'desc']),
+      }),
+      data: { sortBy, sortType },
     })
 
-    if (sortBy)
-      if (sortType === 'asc' || sortType === 'desc' || sortType === undefined) {
-        query = query.orderBy(sortBy, sortType)
-      } else {
-        return response.badRequest(`${sortType} is non processable!`)
-      }
+    const products = await Product.query()
+      .where((query) => {
+        if (search) return query.whereRaw('LOWER(title) like ?', [`%${search.toLowerCase()}%`])
+      })
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-explicit-any
+      .orderBy(senetisedQs.sortBy || 'id', senetisedQs.sortType as any)
+      .paginate(page ? +page : 1, 20)
 
-    const products = await query.paginate(page ? +page : 1, 20)
     return products
   }
 
