@@ -29,4 +29,14 @@ Route.get('/', async () => {
 Route.post('signup', 'AuthController.signup')
 Route.post('login', 'AuthController.login')
 Route.get('me', 'AuthController.me')
-Route.get("/products", "ProductsController.index")
+
+//Produts
+Route.get('/products', 'ProductsController.index')
+Route.get('/product/:id', 'ProductsController.show')
+Route.get('/product/bulk', 'ProductsController.showByIds')
+
+//Cart
+Route.group(() => {
+  Route.get('/carts', 'CartsController.index')
+  Route.post('/carts', 'CartsController.store')
+}).middleware('auth')

@@ -1,6 +1,7 @@
 import { DateTime } from 'luxon'
 import Hash from '@ioc:Adonis/Core/Hash'
-import { column, beforeSave, BaseModel } from '@ioc:Adonis/Lucid/Orm'
+import { column, beforeSave, BaseModel, hasMany, HasMany } from '@ioc:Adonis/Lucid/Orm'
+import Cart from './Cart'
 
 export default class User extends BaseModel {
   @column({ isPrimary: true })
@@ -30,4 +31,7 @@ export default class User extends BaseModel {
       Auth.password = await Hash.make(Auth.password)
     }
   }
+
+  @hasMany(() => Cart)
+  public carts: HasMany<typeof Cart>
 }

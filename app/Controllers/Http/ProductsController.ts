@@ -1,38 +1,53 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
-import products from 'App/Resourses/ProductsDummyData'
-
+import { schema, validator } from '@ioc:Adonis/Core/Validator'
+import Product from 'App/Models/Product'
 
 export default class ProductsController {
-  public async index(ctx: HttpContextContract) {
-    const query = ctx.request.qs();
-    const page: number = query.page || 1;
-    const search: string = query.search || '';
-    const sortBy: string = query.sortBy || '';
-    const sortType: string = query.sortType || ''
-    let searchedProducts = products.filter((item) => {
-      return item.category.toLowerCase().includes(search.toLowerCase());
-    });
-    if (sortBy.toLowerCase() === "price") {
-      if (sortType.toLowerCase() === 'ascending') {
-        searchedProducts.sort(function (x, y) {
-          return x.price - y.price;
-        });
-      } else if (sortType.toLowerCase() === 'descending') {
-        searchedProducts.sort(function (x, y) {
-          return y.price - x.price;
-        });
-      }
-    } else if (sortBy.toLowerCase() === "title") {
-      if (sortType.toLowerCase() === 'ascending') {
-        searchedProducts.sort(function (x, y) {
-          return x.title < y.title ? -1 : 1;
-        })
-      } else if (sortType.toLowerCase() === 'descending') {
-        searchedProducts.sort(function (x, y) {
-          return x.title > y.title ? -1 : 1;
-        })
-      }
+  public async index({ request, response }: HttpContextContract) {
+    const { search, page, sortBy, sortType } = request.qs() as {
+      search?: string
+      page?: string
+      sortBy?: string
+      sortType?: string
     }
-    return searchedProducts.slice((page - 1) * 20, (page * 20));
+    const cols = Object.keys(Product.$keys.serializedToColumns.all())
+
+    if (sortBy && !cols.includes(sortBy))
+      return response.badRequest(`${sortBy} column does not exist in product`)
+
+    let query = Product.query().where((query) => {
+      if (search) return query.whereRaw('LOWER(title) like ?', [`%${search.toLowerCase()}%`])
+    })
+
+    if (sortBy)
+      if (sortType === 'asc' || sortType === 'desc' || sortType === undefined) {
+        query = query.orderBy(sortBy, sortType)
+      } else {
+        return response.badRequest(`${sortType} is non processable!`)
+      }
+
+    const products = await query.paginate(page ? +page : 1, 20)
+    return products
+  }
+
+  public async show({ request }: HttpContextContract) {
+    const { id } = request.params()
+
+    const product = await Product.findOrFail(id)
+    return product
+  }
+
+  public async showByIds({ request }: HttpContextContract) {
+    const { ids } = request.qs() as { ids: string }
+    const idsArray = (ids || '').split(',').map((id) => +id)
+
+    const sanatisedRequest = await validator.validate({
+      schema: schema.create({
+        ids: schema.array().members(schema.number()),
+      }),
+      data: { ids: idsArray },
+    })
+    const products = await Product.query().whereIn('id', sanatisedRequest.ids)
+    return products
   }
 }
