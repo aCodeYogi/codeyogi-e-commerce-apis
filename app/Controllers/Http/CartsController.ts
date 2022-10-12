@@ -23,7 +23,7 @@ export default class CartsController {
 
     const isEntryIncorrect = Object.entries(data).find(([key, value]) => {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-      const isEntryIncorrect = Math.sign(+key) !== 1 && Math.sign(value) !== 1
+      const isEntryIncorrect = Math.sign(+key) !== 1 || Math.sign(value) !== 1
       return isEntryIncorrect
     })
     if (isEntryIncorrect) {
