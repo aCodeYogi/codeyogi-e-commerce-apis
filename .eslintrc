@@ -1,0 +1,67 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "@typescript-eslint"],
+
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"], // Your TypeScript files extension
+
+      "excludedFiles": ["vite.config.ts"],
+
+      "extends": [
+        "prettier",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+      ],
+
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "endOfLine": "auto",
+            "trailingComma": "es5",
+            "semi": false,
+            "singleQuote": true,
+            "useTabs": false,
+            "quoteProps": "consistent",
+            "bracketSpacing": true,
+            "arrowParens": "always",
+            "printWidth": 150
+          }
+        ],
+
+        "no-tabs": "error",
+
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "variable",
+            "format": ["camelCase", "UPPER_CASE", "snake_case", "PascalCase"],
+            "leadingUnderscore": "allow"
+          }
+        ],
+
+        "no-constant-condition": "off",
+
+        "@typescript-eslint/no-unsafe-assignment": "warn",
+
+        "@typescript-eslint/explicit-member-accessibility": "off",
+
+        "@typescript-eslint/no-non-null-assertion": "off",
+
+        "@typescript-eslint/no-unsafe-call": "warn",
+
+        "@typescript-eslint/no-unsafe-member-access": "warn",
+
+        "no-mixed-operators": "error",
+
+        "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
+      },
+
+      "parserOptions": {
+        "project": ["./tsconfig.json"] // Specify it only for TypeScript files
+      }
+    }
+  ]
+}

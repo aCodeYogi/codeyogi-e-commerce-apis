@@ -12,8 +12,7 @@ export default class ProductsController {
     }
     const cols = Object.keys(Product.$keys.serializedToColumns.all())
 
-    if (sortBy && !cols.includes(sortBy))
-      return response.badRequest(`${sortBy} column does not exist in product`)
+    if (sortBy && !cols.includes(sortBy)) return response.badRequest(`${sortBy} column does not exist in product`)
 
     let query = Product.query().where((query) => {
       if (search) return query.whereRaw('LOWER(title) like ?', [`%${search.toLowerCase()}%`])

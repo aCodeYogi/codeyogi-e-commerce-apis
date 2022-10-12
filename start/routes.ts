@@ -21,7 +21,7 @@
 import Route from '@ioc:Adonis/Core/Route'
 
 //testing
-Route.get('/', async () => {
+Route.get('/', () => {
   return { hello: 'world' }
 })
 
@@ -33,7 +33,7 @@ Route.get('me', 'AuthController.me')
 //Produts
 Route.get('/products', 'ProductsController.index')
 Route.get('/product/:id', 'ProductsController.show')
-Route.get('/product/bulk', 'ProductsController.showByIds')
+Route.get('/products/bulk', 'ProductsController.showByIds')
 
 //Cart
 Route.group(() => {

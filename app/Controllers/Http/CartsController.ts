@@ -22,6 +22,7 @@ export default class CartsController {
     })
 
     const isEntryIncorrect = Object.entries(data).find(([key, value]) => {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
       const isEntryIncorrect = Math.sign(+key) !== 1 && Math.sign(value) !== 1
       return isEntryIncorrect
     })
@@ -45,6 +46,7 @@ export default class CartsController {
     const user = await auth.authenticate()
     const carts = await user.related('carts').createMany(
       Object.entries(data).map(([key, value]) => {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
         return { quantity: value, product_id: +key }
       })
     )

@@ -8,10 +8,7 @@ export default class AuthController {
     const { fullName, email, password } = await request.validate({
       schema: schema.create({
         fullName: schema.string({ trim: true }),
-        email: schema.string({ trim: true }, [
-          rules.email(),
-          rules.unique({ table: 'users', column: 'email' }),
-        ]),
+        email: schema.string({ trim: true }, [rules.email(), rules.unique({ table: 'users', column: 'email' })]),
         password: schema.string({ trim: true }),
       }),
     })
