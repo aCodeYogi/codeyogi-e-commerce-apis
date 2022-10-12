@@ -36,8 +36,9 @@ export default class CartsController {
 
     const isAllIdsCorrect = products.length === productsIds.length
     if (!isAllIdsCorrect) {
+      const notFoundIds = productsIds.filter((id) => !products.find((obj) => obj.id === +id))
       return response.badRequest({
-        message: 'Products ids not found!',
+        message: `${notFoundIds.join(',')} ids not found!`,
       })
     }
 

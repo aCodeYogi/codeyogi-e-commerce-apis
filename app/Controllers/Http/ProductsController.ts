@@ -22,10 +22,11 @@ export default class ProductsController {
     if (sortBy)
       if (sortType === 'asc' || sortType === 'desc' || sortType === undefined) {
         query = query.orderBy(sortBy, sortType)
+      } else {
+        return response.badRequest(`${sortType} is non processable!`)
       }
 
     const products = await query.paginate(page ? +page : 1, 20)
-
     return products
   }
 
