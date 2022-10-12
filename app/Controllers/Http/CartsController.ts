@@ -44,6 +44,7 @@ export default class CartsController {
     }
 
     const user = await auth.authenticate()
+    await user.related('carts').query().delete()
     const carts = await user.related('carts').createMany(
       Object.entries(data).map(([key, value]) => {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
