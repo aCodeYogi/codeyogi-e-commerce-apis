@@ -11,6 +11,7 @@ phases:
       - npm install
       - npm run build
       - cp -R .ebextensions build/
+      - cp -R .platform build/
       - cd build/ && npm install
 artifacts:
   files:
