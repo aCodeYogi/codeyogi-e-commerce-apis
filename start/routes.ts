@@ -37,10 +37,10 @@ Route.get('/products/bulk', 'ProductsController.showByIds')
 
 //Movies
 Route.get('/movies', 'MoviesController.index')
+Route.get('/movie/:id', 'MoviesController.show')
 
 //Cart
 Route.group(() => {
   Route.get('/carts', 'CartsController.index')
   Route.post('/carts', 'CartsController.store')
 }).middleware('auth')
-
