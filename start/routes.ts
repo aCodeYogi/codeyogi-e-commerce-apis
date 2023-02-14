@@ -27,8 +27,11 @@ Route.get('/', () => {
 
 //Auth
 Route.post('signup', 'AuthController.signup')
+Route.post('signupWithCookie', 'AuthController.signupWithCookie')
 Route.post('login', 'AuthController.login')
 Route.get('me', 'AuthController.me')
+Route.post('loginWithCookie', 'AuthController.loginWithCookie')
+Route.get('meWithCookie', 'AuthController.meWithCookie')
 
 //Produts
 Route.get('/products', 'ProductsController.index')
