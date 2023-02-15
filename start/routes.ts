@@ -35,6 +35,10 @@ Route.get('/products', 'ProductsController.index')
 Route.get('/product/:id', 'ProductsController.show')
 Route.get('/products/bulk', 'ProductsController.showByIds')
 
+//Movies
+Route.get('/movies', 'MoviesController.index')
+Route.get('/movie/:id', 'MoviesController.show')
+
 //Cart
 Route.group(() => {
   Route.get('/carts', 'CartsController.index')
